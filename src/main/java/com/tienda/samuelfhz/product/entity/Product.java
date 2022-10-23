@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -30,6 +31,7 @@ public class Product {
 
     @Column(name = "DESCRIPTION")
     private String description;
+
 
     @Column(name = "STOCK")
     private Double stock;

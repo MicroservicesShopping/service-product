@@ -42,7 +42,7 @@ public class ProductController {
     public ResponseEntity<Product> getProduct(@PathVariable("id") Long productId){
         Product product = productService.getProduct(productId);
 
-        return product == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(product);
+        return product == null ? ResponseEntity.noContent().build() : ResponseEntity.ok(product);
     }
 
     @PostMapping
