@@ -47,8 +47,8 @@ public class Product {
     @Temporal(TemporalType.DATE)
     private Date createAt;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "CATEGORY_ID")
-    @JsonIgnoreProperties({"hibernateLAzyInitializer", "handler"})
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Category category;
 }

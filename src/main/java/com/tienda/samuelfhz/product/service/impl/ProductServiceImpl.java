@@ -2,6 +2,7 @@ package com.tienda.samuelfhz.product.service.impl;
 
 import com.tienda.samuelfhz.product.entity.Category;
 import com.tienda.samuelfhz.product.entity.Product;
+import com.tienda.samuelfhz.product.repository.CategoryRepository;
 import com.tienda.samuelfhz.product.repository.ProductRepository;
 import com.tienda.samuelfhz.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
